@@ -1,0 +1,41 @@
+DEBUG:asyncio:Using selector: EpollSelector
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<observable_recv() done, defined at client.py:28> exception=ZMQError('Operation cannot be accomplished in current state')>
+Traceback (most recent call last):
+  File "client.py", line 30, in observable_recv
+    output = socket.recv()
+  File "zmq/backend/cython/socket.pyx", line 791, in zmq.backend.cython.socket.Socket.recv
+  File "zmq/backend/cython/socket.pyx", line 827, in zmq.backend.cython.socket.Socket.recv
+  File "zmq/backend/cython/socket.pyx", line 191, in zmq.backend.cython.socket._recv_copy
+  File "zmq/backend/cython/socket.pyx", line 186, in zmq.backend.cython.socket._recv_copy
+  File "zmq/backend/cython/checkrc.pxd", line 26, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Operation cannot be accomplished in current state
+DEBUG:asyncio:Using selector: EpollSelector
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<observable_recv() done, defined at client.py:28> exception=ZMQError('Operation cannot be accomplished in current state')>
+Traceback (most recent call last):
+  File "client.py", line 30, in observable_recv
+    output = socket.recv()
+  File "zmq/backend/cython/socket.pyx", line 791, in zmq.backend.cython.socket.Socket.recv
+  File "zmq/backend/cython/socket.pyx", line 827, in zmq.backend.cython.socket.Socket.recv
+  File "zmq/backend/cython/socket.pyx", line 191, in zmq.backend.cython.socket._recv_copy
+  File "zmq/backend/cython/socket.pyx", line 186, in zmq.backend.cython.socket._recv_copy
+  File "zmq/backend/cython/checkrc.pxd", line 26, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Operation cannot be accomplished in current state
+DEBUG:asyncio:Using selector: EpollSelector
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<observable_recv() done, defined at client.py:28> exception=ZMQError('Operation cannot be accomplished in current state')>
+Traceback (most recent call last):
+  File "client.py", line 30, in observable_recv
+    output = socket.recv()
+  File "zmq/backend/cython/socket.pyx", line 791, in zmq.backend.cython.socket.Socket.recv
+  File "zmq/backend/cython/socket.pyx", line 827, in zmq.backend.cython.socket.Socket.recv
+  File "zmq/backend/cython/socket.pyx", line 191, in zmq.backend.cython.socket._recv_copy
+  File "zmq/backend/cython/socket.pyx", line 186, in zmq.backend.cython.socket._recv_copy
+  File "zmq/backend/cython/checkrc.pxd", line 26, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Operation cannot be accomplished in current state
+DEBUG:root:received from server: b"executed b'sup'"
+DEBUG:root:received from server: b"executed b'asd'"
+DEBUG:root:received from server: b"executed b'asdasd'"
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:asyncio:Using selector: EpollSelector

@@ -1,0 +1,170 @@
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:root:arecv called
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<arecv() done, defined at client.py:42> exception=ZMQError('Operation cannot be accomplished in current state')>
+Traceback (most recent call last):
+  File "client.py", line 45, in arecv
+    msg = socket.recv_string()
+  File "/home/mosiman/.local/share/virtualenvs/asyncioshit-yH1vlhAS/lib/python3.8/site-packages/zmq/sugar/socket.py", line 592, in recv_string
+    msg = self.recv(flags=flags)
+  File "zmq/backend/cython/socket.pyx", line 791, in zmq.backend.cython.socket.Socket.recv
+  File "zmq/backend/cython/socket.pyx", line 827, in zmq.backend.cython.socket.Socket.recv
+  File "zmq/backend/cython/socket.pyx", line 191, in zmq.backend.cython.socket._recv_copy
+  File "zmq/backend/cython/socket.pyx", line 186, in zmq.backend.cython.socket._recv_copy
+  File "zmq/backend/cython/checkrc.pxd", line 26, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Operation cannot be accomplished in current state
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:root:arecv called
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:root:arecv called
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<arecv() done, defined at client.py:42> exception=ZMQError('Operation cannot be accomplished in current state')>
+Traceback (most recent call last):
+  File "client.py", line 45, in arecv
+    while True:
+  File "/home/mosiman/.local/share/virtualenvs/asyncioshit-yH1vlhAS/lib/python3.8/site-packages/zmq/sugar/socket.py", line 592, in recv_string
+    msg = self.recv(flags=flags)
+  File "zmq/backend/cython/socket.pyx", line 791, in zmq.backend.cython.socket.Socket.recv
+  File "zmq/backend/cython/socket.pyx", line 827, in zmq.backend.cython.socket.Socket.recv
+  File "zmq/backend/cython/socket.pyx", line 191, in zmq.backend.cython.socket._recv_copy
+  File "zmq/backend/cython/socket.pyx", line 186, in zmq.backend.cython.socket._recv_copy
+  File "zmq/backend/cython/checkrc.pxd", line 26, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Operation cannot be accomplished in current state
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<loop_input() done, defined at client.py:49> exception=ZMQError('Operation cannot be accomplished in current state')>
+Traceback (most recent call last):
+  File "client.py", line 52, in loop_input
+    cmd = input("cmd: ")
+  File "/home/mosiman/.local/share/virtualenvs/asyncioshit-yH1vlhAS/lib/python3.8/site-packages/zmq/sugar/socket.py", line 568, in send_string
+    return self.send(u.encode(encoding), flags=flags, copy=copy, **kwargs)
+  File "/home/mosiman/.local/share/virtualenvs/asyncioshit-yH1vlhAS/lib/python3.8/site-packages/zmq/sugar/socket.py", line 400, in send
+    return super(Socket, self).send(data, flags=flags, copy=copy, track=track)
+  File "zmq/backend/cython/socket.pyx", line 728, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 775, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 247, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/socket.pyx", line 242, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/checkrc.pxd", line 26, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Operation cannot be accomplished in current state
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:root:arecv called
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:root:arecv called
+ERROR:asyncio:Future exception was never retrieved
+future: <Future finished exception=ZMQError('Operation cannot be accomplished in current state')>
+Traceback (most recent call last):
+  File "/home/mosiman/.local/share/virtualenvs/asyncioshit-yH1vlhAS/lib/python3.8/site-packages/zmq/_future.py", line 372, in _add_send_event
+    r = send(msg, **nowait_kwargs)
+  File "/home/mosiman/.local/share/virtualenvs/asyncioshit-yH1vlhAS/lib/python3.8/site-packages/zmq/sugar/socket.py", line 400, in send
+    return super(Socket, self).send(data, flags=flags, copy=copy, track=track)
+  File "zmq/backend/cython/socket.pyx", line 728, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 775, in zmq.backend.cython.socket.Socket.send
+  File "zmq/backend/cython/socket.pyx", line 247, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/socket.pyx", line 242, in zmq.backend.cython.socket._send_copy
+  File "zmq/backend/cython/checkrc.pxd", line 26, in zmq.backend.cython.checkrc._check_rc
+zmq.error.ZMQError: Operation cannot be accomplished in current state
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<loop_input() done, defined at client.py:50> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "client.py", line 63, in <module>
+    main()
+  File "client.py", line 60, in main
+    loop.run_forever()
+  File "/usr/lib64/python3.8/asyncio/base_events.py", line 567, in run_forever
+    self._run_once()
+  File "/usr/lib64/python3.8/asyncio/base_events.py", line 1855, in _run_once
+    handle._run()
+  File "/usr/lib64/python3.8/asyncio/events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+  File "client.py", line 52, in loop_input
+    cmd = input("cmd: ")
+KeyboardInterrupt
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:root:arecv called
+DEBUG:traitlets:Found kernel python3 in /usr/share/jupyter/kernels
+DEBUG:traitlets:Starting kernel: ['/usr/bin/python3', '-m', 'ipykernel_launcher', '-f', '/tmp/tmpopwisoz4.json']
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:45759
+DEBUG:traitlets:Found kernel python3 in /usr/share/jupyter/kernels
+DEBUG:traitlets:Starting kernel: ['/usr/bin/python3', '-m', 'ipykernel_launcher', '-f', '/tmp/tmp9o1srltl.json']
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:54469
+DEBUG:traitlets:connecting shell channel to tcp://127.0.0.1:56003
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:56003
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:traitlets:connecting iopub channel to tcp://127.0.0.1:52115
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:52115
+DEBUG:traitlets:connecting stdin channel to tcp://127.0.0.1:52015
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:52015
+DEBUG:traitlets:connecting heartbeat channel to tcp://127.0.0.1:54241
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:traitlets:connecting control channel to tcp://127.0.0.1:54469
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:54469
+DEBUG:root:arecv called
+DEBUG:traitlets:Found kernel python3 in /usr/share/jupyter/kernels
+DEBUG:traitlets:Starting kernel: ['/usr/bin/python3', '-m', 'ipykernel_launcher', '-f', '/tmp/tmptwzhawi7.json']
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:39603
+DEBUG:traitlets:connecting shell channel to tcp://127.0.0.1:50305
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:50305
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:traitlets:connecting iopub channel to tcp://127.0.0.1:54691
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:54691
+DEBUG:traitlets:connecting stdin channel to tcp://127.0.0.1:42463
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:42463
+DEBUG:traitlets:connecting heartbeat channel to tcp://127.0.0.1:44021
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:traitlets:connecting control channel to tcp://127.0.0.1:39603
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:39603
+DEBUG:root:arecv called
+DEBUG:traitlets:Found kernel python3 in /usr/share/jupyter/kernels
+DEBUG:traitlets:Starting kernel: ['/usr/bin/python3', '-m', 'ipykernel_launcher', '-f', '/tmp/tmpoln7swnr.json']
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:54517
+DEBUG:traitlets:connecting shell channel to tcp://127.0.0.1:39351
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:39351
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:traitlets:connecting iopub channel to tcp://127.0.0.1:41685
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:41685
+DEBUG:traitlets:connecting stdin channel to tcp://127.0.0.1:36575
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:36575
+DEBUG:traitlets:connecting heartbeat channel to tcp://127.0.0.1:41853
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:traitlets:connecting control channel to tcp://127.0.0.1:54517
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:54517
+DEBUG:traitlets:Found kernel python3 in /usr/share/jupyter/kernels
+DEBUG:traitlets:Starting kernel: ['/usr/bin/python3', '-m', 'ipykernel_launcher', '-f', '/tmp/tmp6fwxgwjp.json']
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:51751
+DEBUG:traitlets:connecting shell channel to tcp://127.0.0.1:60841
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:60841
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:traitlets:connecting iopub channel to tcp://127.0.0.1:56865
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:56865
+DEBUG:traitlets:connecting stdin channel to tcp://127.0.0.1:36233
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:36233
+DEBUG:traitlets:connecting heartbeat channel to tcp://127.0.0.1:55757
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:traitlets:connecting control channel to tcp://127.0.0.1:51751
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:51751
+DEBUG:root:arecv called
+DEBUG:root:received in arecv: {'header': {'msg_id': 'feda0fdf-48b51355b4d3cdae0434c677', 'msg_type': 'status', 'username': 'mosiman', 'session': '27be9457-3f41417af0ef2a59ed5c7f67', 'date': datetime.datetime(2020, 3, 8, 21, 27, 43, 745270, tzinfo=tzutc()), 'version': '5.3'}, 'msg_id': 'feda0fdf-48b51355b4d3cdae0434c677', 'msg_type': 'status', 'parent_header': {}, 'metadata': {}, 'content': {'execution_state': 'starting'}, 'buffers': []}
+DEBUG:root:received in arecv: {'header': {'msg_id': '8d25866f-bd7bace4cefe5eae77f50f0a', 'msg_type': 'status', 'username': 'mosiman', 'session': '27be9457-3f41417af0ef2a59ed5c7f67', 'date': datetime.datetime(2020, 3, 8, 21, 27, 43, 839631, tzinfo=tzutc()), 'version': '5.3'}, 'msg_id': '8d25866f-bd7bace4cefe5eae77f50f0a', 'msg_type': 'status', 'parent_header': {'msg_id': 'c8a6e604-72f6ea65800e3647cd9f40a9_0', 'msg_type': 'kernel_info_request', 'username': 'mosiman', 'session': 'c8a6e604-72f6ea65800e3647cd9f40a9', 'date': datetime.datetime(2020, 3, 8, 21, 27, 43, 276010, tzinfo=tzutc()), 'version': '5.3'}, 'metadata': {}, 'content': {'execution_state': 'busy'}, 'buffers': []}
+DEBUG:root:received in arecv: {'header': {'msg_id': '6743a353-ddedf99353668031e475489e', 'msg_type': 'status', 'username': 'mosiman', 'session': '27be9457-3f41417af0ef2a59ed5c7f67', 'date': datetime.datetime(2020, 3, 8, 21, 27, 43, 844750, tzinfo=tzutc()), 'version': '5.3'}, 'msg_id': '6743a353-ddedf99353668031e475489e', 'msg_type': 'status', 'parent_header': {'msg_id': 'c8a6e604-72f6ea65800e3647cd9f40a9_0', 'msg_type': 'kernel_info_request', 'username': 'mosiman', 'session': 'c8a6e604-72f6ea65800e3647cd9f40a9', 'date': datetime.datetime(2020, 3, 8, 21, 27, 43, 276010, tzinfo=tzutc()), 'version': '5.3'}, 'metadata': {}, 'content': {'execution_state': 'idle'}, 'buffers': []}
+DEBUG:root:received in arecv: {'header': {'msg_id': '13699bdc-14b1fb477aaa920a1a09f6c2', 'msg_type': 'status', 'username': 'mosiman', 'session': '27be9457-3f41417af0ef2a59ed5c7f67', 'date': datetime.datetime(2020, 3, 8, 21, 27, 44, 955833, tzinfo=tzutc()), 'version': '5.3'}, 'msg_id': '13699bdc-14b1fb477aaa920a1a09f6c2', 'msg_type': 'status', 'parent_header': {'msg_id': 'c8a6e604-72f6ea65800e3647cd9f40a9_1', 'msg_type': 'execute_request', 'username': 'mosiman', 'session': 'c8a6e604-72f6ea65800e3647cd9f40a9', 'date': datetime.datetime(2020, 3, 8, 21, 27, 44, 951048, tzinfo=tzutc()), 'version': '5.3'}, 'metadata': {}, 'content': {'execution_state': 'busy'}, 'buffers': []}
+DEBUG:root:received in arecv: {'header': {'msg_id': '1f9d9c1e-95d5f4888ab68caeac7de1c7', 'msg_type': 'execute_input', 'username': 'mosiman', 'session': '27be9457-3f41417af0ef2a59ed5c7f67', 'date': datetime.datetime(2020, 3, 8, 21, 27, 44, 958668, tzinfo=tzutc()), 'version': '5.3'}, 'msg_id': '1f9d9c1e-95d5f4888ab68caeac7de1c7', 'msg_type': 'execute_input', 'parent_header': {'msg_id': 'c8a6e604-72f6ea65800e3647cd9f40a9_1', 'msg_type': 'execute_request', 'username': 'mosiman', 'session': 'c8a6e604-72f6ea65800e3647cd9f40a9', 'date': datetime.datetime(2020, 3, 8, 21, 27, 44, 951048, tzinfo=tzutc()), 'version': '5.3'}, 'metadata': {}, 'content': {'code': 'foo', 'execution_count': 1}, 'buffers': []}
+DEBUG:root:received in arecv: {'header': {'msg_id': 'bce3cd81-90a335a09ad7463cd7037867', 'msg_type': 'error', 'username': 'mosiman', 'session': '27be9457-3f41417af0ef2a59ed5c7f67', 'date': datetime.datetime(2020, 3, 8, 21, 27, 45, 51201, tzinfo=tzutc()), 'version': '5.3'}, 'msg_id': 'bce3cd81-90a335a09ad7463cd7037867', 'msg_type': 'error', 'parent_header': {'msg_id': 'c8a6e604-72f6ea65800e3647cd9f40a9_1', 'msg_type': 'execute_request', 'username': 'mosiman', 'session': 'c8a6e604-72f6ea65800e3647cd9f40a9', 'date': datetime.datetime(2020, 3, 8, 21, 27, 44, 951048, tzinfo=tzutc()), 'version': '5.3'}, 'metadata': {}, 'content': {'traceback': ['\x1b[0;31m---------------------------------------------------------------------------\x1b[0m', '\x1b[0;31mNameError\x1b[0m                                 Traceback (most recent call last)', '\x1b[0;32m<ipython-input-1-f1d2d2f924e9>\x1b[0m in \x1b[0;36m<module>\x1b[0;34m\x1b[0m\n\x1b[0;32m----> 1\x1b[0;31m \x1b[0mfoo\x1b[0m\x1b[0;34m\x1b[0m\x1b[0;34m\x1b[0m\x1b[0m\n\x1b[0m', "\x1b[0;31mNameError\x1b[0m: name 'foo' is not defined"], 'ename': 'NameError', 'evalue': "name 'foo' is not defined"}, 'buffers': []}
+DEBUG:root:received in arecv: {'header': {'msg_id': '30670223-1e6f6bfc127e83bc0c6e8710', 'msg_type': 'status', 'username': 'mosiman', 'session': '27be9457-3f41417af0ef2a59ed5c7f67', 'date': datetime.datetime(2020, 3, 8, 21, 27, 45, 53495, tzinfo=tzutc()), 'version': '5.3'}, 'msg_id': '30670223-1e6f6bfc127e83bc0c6e8710', 'msg_type': 'status', 'parent_header': {'msg_id': 'c8a6e604-72f6ea65800e3647cd9f40a9_1', 'msg_type': 'execute_request', 'username': 'mosiman', 'session': 'c8a6e604-72f6ea65800e3647cd9f40a9', 'date': datetime.datetime(2020, 3, 8, 21, 27, 44, 951048, tzinfo=tzutc()), 'version': '5.3'}, 'metadata': {}, 'content': {'execution_state': 'idle'}, 'buffers': []}
+DEBUG:traitlets:Found kernel python3 in /usr/share/jupyter/kernels
+DEBUG:traitlets:Starting kernel: ['/usr/bin/python3', '-m', 'ipykernel_launcher', '-f', '/tmp/tmp4shy56ju.json']
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:60675
+DEBUG:traitlets:connecting shell channel to tcp://127.0.0.1:59719
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:59719
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:traitlets:connecting iopub channel to tcp://127.0.0.1:38943
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:38943
+DEBUG:traitlets:connecting stdin channel to tcp://127.0.0.1:39021
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:39021
+DEBUG:traitlets:connecting heartbeat channel to tcp://127.0.0.1:42175
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:traitlets:connecting control channel to tcp://127.0.0.1:60675
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:60675
+DEBUG:root:arecv called
+DEBUG:root:received in arecv: {'header': {'msg_id': '68d68f6f-33643edfe96d890363cea3d6', 'msg_type': 'status', 'username': 'mosiman', 'session': 'ec862b0a-9e51672071f7665f563bd398', 'date': datetime.datetime(2020, 3, 8, 21, 28, 3, 498224, tzinfo=tzutc()), 'version': '5.3'}, 'msg_id': '68d68f6f-33643edfe96d890363cea3d6', 'msg_type': 'status', 'parent_header': {'msg_id': 'acf49842-3ec3fc6d93da1a8cba9a553f_1', 'msg_type': 'execute_request', 'username': 'mosiman', 'session': 'acf49842-3ec3fc6d93da1a8cba9a553f', 'date': datetime.datetime(2020, 3, 8, 21, 28, 3, 496782, tzinfo=tzutc()), 'version': '5.3'}, 'metadata': {}, 'content': {'execution_state': 'busy'}, 'buffers': []}
+DEBUG:root:received in arecv: {'header': {'msg_id': 'eacb93ef-15f6feb1c4e6e9b471655ab9', 'msg_type': 'execute_input', 'username': 'mosiman', 'session': 'ec862b0a-9e51672071f7665f563bd398', 'date': datetime.datetime(2020, 3, 8, 21, 28, 3, 498570, tzinfo=tzutc()), 'version': '5.3'}, 'msg_id': 'eacb93ef-15f6feb1c4e6e9b471655ab9', 'msg_type': 'execute_input', 'parent_header': {'msg_id': 'acf49842-3ec3fc6d93da1a8cba9a553f_1', 'msg_type': 'execute_request', 'username': 'mosiman', 'session': 'acf49842-3ec3fc6d93da1a8cba9a553f', 'date': datetime.datetime(2020, 3, 8, 21, 28, 3, 496782, tzinfo=tzutc()), 'version': '5.3'}, 'metadata': {}, 'content': {'code': "print('hello world')", 'execution_count': 1}, 'buffers': []}
+DEBUG:root:received in arecv: {'header': {'msg_id': 'f62d53c6-87f9c6a951b7349b57f3f2c5', 'msg_type': 'stream', 'username': 'mosiman', 'session': 'ec862b0a-9e51672071f7665f563bd398', 'date': datetime.datetime(2020, 3, 8, 21, 28, 3, 500767, tzinfo=tzutc()), 'version': '5.3'}, 'msg_id': 'f62d53c6-87f9c6a951b7349b57f3f2c5', 'msg_type': 'stream', 'parent_header': {'msg_id': 'acf49842-3ec3fc6d93da1a8cba9a553f_1', 'msg_type': 'execute_request', 'username': 'mosiman', 'session': 'acf49842-3ec3fc6d93da1a8cba9a553f', 'date': datetime.datetime(2020, 3, 8, 21, 28, 3, 496782, tzinfo=tzutc()), 'version': '5.3'}, 'metadata': {}, 'content': {'name': 'stdout', 'text': 'hello world\n'}, 'buffers': []}
+DEBUG:root:received in arecv: {'header': {'msg_id': 'd48b8084-b818ce840ea249b6c3fb96c2', 'msg_type': 'status', 'username': 'mosiman', 'session': 'ec862b0a-9e51672071f7665f563bd398', 'date': datetime.datetime(2020, 3, 8, 21, 28, 3, 504385, tzinfo=tzutc()), 'version': '5.3'}, 'msg_id': 'd48b8084-b818ce840ea249b6c3fb96c2', 'msg_type': 'status', 'parent_header': {'msg_id': 'acf49842-3ec3fc6d93da1a8cba9a553f_1', 'msg_type': 'execute_request', 'username': 'mosiman', 'session': 'acf49842-3ec3fc6d93da1a8cba9a553f', 'date': datetime.datetime(2020, 3, 8, 21, 28, 3, 496782, tzinfo=tzutc()), 'version': '5.3'}, 'metadata': {}, 'content': {'execution_state': 'idle'}, 'buffers': []}

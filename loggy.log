@@ -1,0 +1,29 @@
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:root:starto
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:root:starto
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:root:starto
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:root:executing command foobar
+DEBUG:root:randsleep: 0
+DEBUG:root:randsleep: 1
+DEBUG:root:randsleep: 0
+DEBUG:root:randsleep: 3
+DEBUG:root:randsleep: 1
+DEBUG:root:starto
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:root:executing command foobar
+DEBUG:root:randsleep: 2
+DEBUG:root:starto
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:root:starto
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:root:starto
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:root:executing command foobar
+DEBUG:root:randsleep: 1
+DEBUG:root:randsleep: 0
+DEBUG:root:randsleep: 3
+DEBUG:root:randsleep: 1
+DEBUG:root:randsleep: 2

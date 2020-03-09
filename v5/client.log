@@ -1,0 +1,18 @@
+DEBUG:traitlets:Found kernel python3 in /usr/share/jupyter/kernels
+DEBUG:traitlets:Starting kernel: ['/usr/bin/python3', '-m', 'ipykernel_launcher', '-f', '/tmp/tmpbyrwz64l.json']
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:45551
+DEBUG:traitlets:connecting shell channel to tcp://127.0.0.1:45131
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:45131
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:traitlets:connecting iopub channel to tcp://127.0.0.1:45119
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:45119
+DEBUG:traitlets:connecting stdin channel to tcp://127.0.0.1:48689
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:48689
+DEBUG:traitlets:connecting heartbeat channel to tcp://127.0.0.1:55731
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:traitlets:connecting control channel to tcp://127.0.0.1:45551
+DEBUG:traitlets:Connecting to: tcp://127.0.0.1:45551
+DEBUG:root:received in observable: {'header': {'msg_id': '06c1e871-f73df4bdb5c2a132ebde70f2', 'msg_type': 'status', 'username': 'mosiman', 'session': '4892c8c6-18b417261a988692e9de00a6', 'date': datetime.datetime(2020, 3, 9, 10, 50, 7, 304027, tzinfo=tzutc()), 'version': '5.3'}, 'msg_id': '06c1e871-f73df4bdb5c2a132ebde70f2', 'msg_type': 'status', 'parent_header': {'msg_id': '4ff6be25-cbc6e4355dd1201de3d97f41_1', 'msg_type': 'execute_request', 'username': 'mosiman', 'session': '4ff6be25-cbc6e4355dd1201de3d97f41', 'date': datetime.datetime(2020, 3, 9, 10, 50, 7, 300637, tzinfo=tzutc()), 'version': '5.3'}, 'metadata': {}, 'content': {'execution_state': 'busy'}, 'buffers': []}
+DEBUG:root:received in observable: {'header': {'msg_id': 'c3180688-5bcad874971a35f4c9bf8dce', 'msg_type': 'execute_input', 'username': 'mosiman', 'session': '4892c8c6-18b417261a988692e9de00a6', 'date': datetime.datetime(2020, 3, 9, 10, 50, 7, 304910, tzinfo=tzutc()), 'version': '5.3'}, 'msg_id': 'c3180688-5bcad874971a35f4c9bf8dce', 'msg_type': 'execute_input', 'parent_header': {'msg_id': '4ff6be25-cbc6e4355dd1201de3d97f41_1', 'msg_type': 'execute_request', 'username': 'mosiman', 'session': '4ff6be25-cbc6e4355dd1201de3d97f41', 'date': datetime.datetime(2020, 3, 9, 10, 50, 7, 300637, tzinfo=tzutc()), 'version': '5.3'}, 'metadata': {}, 'content': {'code': '1+4', 'execution_count': 1}, 'buffers': []}
+DEBUG:root:received in observable: {'header': {'msg_id': 'e78d71b1-068231bc324e277adf8551bf', 'msg_type': 'execute_result', 'username': 'mosiman', 'session': '4892c8c6-18b417261a988692e9de00a6', 'date': datetime.datetime(2020, 3, 9, 10, 50, 7, 308644, tzinfo=tzutc()), 'version': '5.3'}, 'msg_id': 'e78d71b1-068231bc324e277adf8551bf', 'msg_type': 'execute_result', 'parent_header': {'msg_id': '4ff6be25-cbc6e4355dd1201de3d97f41_1', 'msg_type': 'execute_request', 'username': 'mosiman', 'session': '4ff6be25-cbc6e4355dd1201de3d97f41', 'date': datetime.datetime(2020, 3, 9, 10, 50, 7, 300637, tzinfo=tzutc()), 'version': '5.3'}, 'metadata': {}, 'content': {'data': {'text/plain': '5'}, 'metadata': {}, 'execution_count': 1}, 'buffers': []}
+DEBUG:root:received in observable: {'header': {'msg_id': 'b1cce814-dc6938f34121535af37cd3c5', 'msg_type': 'status', 'username': 'mosiman', 'session': '4892c8c6-18b417261a988692e9de00a6', 'date': datetime.datetime(2020, 3, 9, 10, 50, 7, 336814, tzinfo=tzutc()), 'version': '5.3'}, 'msg_id': 'b1cce814-dc6938f34121535af37cd3c5', 'msg_type': 'status', 'parent_header': {'msg_id': '4ff6be25-cbc6e4355dd1201de3d97f41_1', 'msg_type': 'execute_request', 'username': 'mosiman', 'session': '4ff6be25-cbc6e4355dd1201de3d97f41', 'date': datetime.datetime(2020, 3, 9, 10, 50, 7, 300637, tzinfo=tzutc()), 'version': '5.3'}, 'metadata': {}, 'content': {'execution_state': 'idle'}, 'buffers': []}

@@ -1,0 +1,52 @@
+DEBUG:root:starto
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:root:executing command foo
+DEBUG:root:randsleep: 2
+DEBUG:root:randsleep: 2
+DEBUG:root:randsleep: 4
+DEBUG:root:randsleep: 2
+DEBUG:root:randsleep: 4
+DEBUG:root:executing command bar
+DEBUG:root:randsleep: 3
+DEBUG:root:randsleep: 0
+DEBUG:root:randsleep: 2
+DEBUG:root:executing command to
+DEBUG:root:randsleep: 0
+DEBUG:root:randsleep: 0
+DEBUG:root:randsleep: 3
+DEBUG:root:randsleep: 4
+DEBUG:root:randsleep: 4
+DEBUG:root:randsleep: 4
+DEBUG:root:randsleep: 4
+DEBUG:root:starto
+DEBUG:asyncio:Using selector: EpollSelector
+DEBUG:root:executing command foo
+DEBUG:root:foo returns 1, waiting 0
+DEBUG:root:foo returns 2, waiting 2
+DEBUG:root:executing command bar
+DEBUG:root:bar returns 1, waiting 1
+DEBUG:root:foo returns 3, waiting 2
+DEBUG:root:bar returns 2, waiting 3
+DEBUG:root:foo returns 4, waiting 2
+DEBUG:root:bar returns 3, waiting 0
+DEBUG:root:bar returns 4, waiting 2
+DEBUG:root:foo returns 5, waiting 0
+DEBUG:root:executing command loola
+DEBUG:root:loola returns 1, waiting 2
+DEBUG:root:bar returns 5, waiting 0
+DEBUG:root:loola returns 2, waiting 1
+DEBUG:root:loola returns 3, waiting 2
+DEBUG:root:loola returns 4, waiting 0
+DEBUG:root:loola returns 5, waiting 1
+DEBUG:root:executing command foobar
+DEBUG:root:foobar returns 1, waiting 4
+DEBUG:root:executing command barfoo
+DEBUG:root:barfoo returns 1, waiting 2
+DEBUG:root:foobar returns 2, waiting 0
+DEBUG:root:foobar returns 3, waiting 0
+DEBUG:root:foobar returns 4, waiting 1
+DEBUG:root:barfoo returns 2, waiting 3
+DEBUG:root:foobar returns 5, waiting 1
+DEBUG:root:barfoo returns 3, waiting 3
+DEBUG:root:barfoo returns 4, waiting 3
+DEBUG:root:barfoo returns 5, waiting 2
